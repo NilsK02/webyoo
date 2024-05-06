@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kontakt</title>
+        <link rel="stylesheet" type="text/css" href="src/css/styles.css">
+    </head>
+<body>
+<!-- NAVBAR -->
+<nav id="header-nav">
+    <div class="container" id="mobile-nav">
+        <div class="row">
+            <div class="col-6">
+                <div class="clearfix" id="mobile-nav-dropdown">
+                    <div id="mobile-nav-button"><span>&equiv;</span></div>
+                    <div class="clearfix" id="mobile-nav-content">
+                    <ul>
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="Leistungen.html">Leistungen</a></li>
+                    <li><a href="Arbeiten.html">Arbeiten</a></li>
+                    <li class="active"><a href="Kontakt.html">Kontakt</a></li>
+                    <li><a href="Impressum.html">Impressum</a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="desktop-nav">
+        <div class="row">
+            <div class="col-6">
+                        <ul>
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="Leistungen.html">Leistungen</a></li>
+                        <li><a href="Arbeiten.html">Arbeiten</a></li>
+                        <li class="active"><a href="Kontakt.html">Kontakt</a></li>
+                        <li><a href="Impressum.html">Impressum</a></li>
+                        </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <header id="header-banner-klein"></header>
+
+<!-- Kontakt -->
+<section id="kontakt-bereich">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <header class="intro-container">
+                    <h1>Kontakt</h1>
+                    <p>Kontaktieren Sie uns, um Ihre digitalen Ideen in die Realität umzusetzen. Wir freuen uns darauf, mit Ihnen zusammenzuarbeiten und Ihr Projekt zum Erfolg zu führen!</p>
+                </header>
+            </div>
+        </div>
+        <form id="kontakt-formular" action="Kontakt.html" method="post">
+            <div class="row">
+                <div class="col-3">
+                    <label for="vorname" class="screenreader">Vorname:</label>
+                    <input id="vorname" type="text" placeholder="Vorname">
+                </div>
+                <div class="col-3">
+                    <label for="nachname" class="screenreader">Nachname:</label>
+                    <input id="nachname" type="text" placeholder="Nachname">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <label for="email" class="screenreader">email:</label>
+                    <input id="email" type="text" placeholder="E-mail" pattern="(?:[a-z0-9!#$%&'*+=?^_`\{\|\}~\-]+(?:\.[a-z0-9!#$%&'*+=?^_`\{\|\}~\-]+)*|\u0022(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*\u0022)@(?:(?:[a-z0-9](?:[a-z0-9\-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9\-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9\-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])" title="gebe eine gültige email adresse ein">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <label for="nachricht" class="screenreader">Nachricht</label>
+                    <textarea id="nachricht" name="nachricht" placeholder="Nachricht"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <button id="absendenButton" class="btn-typ-3" type="submit" name="absendenButton">Senden</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+
+
+<!-- FOOTER -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <span>WEBYOU by Nils Küster (2024)</span>
+                    <nav id="footer-nav"><a href="Impressum.html">Impressum</a></nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script defer>document.addEventListener("touchstart", function(){}, true);</script>
+</body>
+</html>
